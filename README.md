@@ -5,9 +5,8 @@ Este repositório contém meu portfólio pessoal, desenvolvido para apresentar m
 ---
 
 ## Prévia de Portfólio
-![Prévia do Portfólio](portfolio-preview.png)
+![Prévia do Portfólio](previa.png)
 
----
 
 ## Tecnologias utilizadas
 
