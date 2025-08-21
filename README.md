@@ -34,6 +34,6 @@ Durante o desenvolvimento deste portfólio, pratiquei e aprofundei:
 ## 💻 Desenvolvedora
 
 Projeto desenvolvido por **Larissa Ruiz** em 2025.<br>
-[LinkedIn](https://www.linkedin.com/in/larissa-r-ruiz/) | [GitHub](https://github.com/Lalisruiz) | Email: rrs.larissa@gmail.com | WhatsApp: (11) 98320-2432
+[LinkedIn](https://www.linkedin.com/in/larissa-r-ruiz/) | [GitHub](https://github.com/Lalisruiz) | Email: rrs.larissa@gmail.com 
 
 ---
