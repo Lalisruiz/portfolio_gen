@@ -277,21 +277,20 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 /* Foto de perfil quadrada, borda arredondada (círculo), sem cortes estranhos */
 .profile-photo {
-  width: 180px;
-  height: 180px;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
   border-radius: 50%;
-  border: none;
-  box-shadow: none;
-  background: transparent;
+  border: 6px solid var(--secondary);
+  box-shadow: 0 2px 12px rgba(255,152,0,0.10);
+  background: var(--white);
   margin-bottom: 1.2rem;
   padding: 0;
-  overflow: hidden;
-  display: block;
 }
 
 /* Títulos destacados */
@@ -319,49 +318,42 @@ footer {
 }
 .skills-list {
   list-style: none;
-  padding: 0 2rem;
+  padding: 0;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 700px;
   font-size: 1.08rem;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  column-gap: 1.5rem;
-  row-gap: 1.2rem;
+  justify-content: center;
 }
 .skills-list li {
-  margin-bottom: 0;
+  margin-bottom: 1.1rem;
   line-height: 1.5;
   word-break: normal;
-  display: contents;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  gap: 0.5rem;
 }
 .skill-label {
   font-weight: bold;
   color: #FF9800;
   margin-right: 0.5rem;
-  display: block;
+  display: inline-block;
   min-width: 170px;
   white-space: nowrap;
-  text-align: right;
-}
-.skill-content {
-  display: block;
-  text-align: left;
-  white-space: normal;
 }
 @media (max-width: 700px) {
   .skills-list {
-    grid-template-columns: 1fr;
-    padding: 0 0.5rem;
+    max-width: 98vw;
     font-size: 1rem;
   }
   .skill-label {
-    min-width: 0;
+    min-width: 120px;
     font-size: 1rem;
-    text-align: left;
-    margin-bottom: 0.2rem;
   }
-  .skill-content {
-    margin-bottom: 1rem;
+  .skills-list li {
+    white-space: normal;
+    flex-wrap: wrap;
   }
   .content-block {
     padding: 1.2rem 0.5rem;
@@ -400,48 +392,5 @@ footer {
     min-width: 90vw;
     max-width: 98vw;
     padding: 1rem;
-  }
-}
-
-/* Estilo da tabela de formação */
-.formacao table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 1.08rem;
-  background: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(255,152,0,0.10);
-}
-.formacao th {
-  background: #FFD600;
-  color: #111;
-  font-weight: 700;
-  padding: 1rem 0.5rem;
-  text-align: center;
-  font-size: 1.15rem;
-  border: 1.5px solid #FFD600;
-}
-.formacao td {
-  padding: 1rem 0.7rem;
-  text-align: left;
-  vertical-align: top;
-  border: 1.5px solid #FFD600;
-}
-.formacao tr:last-child td {
-  border-bottom: 1.5px solid #FFD600;
-}
-.formacao tr {
-  transition: background 0.2s;
-}
-.formacao tr:hover td {
-  background: #fffbe6;
-}
-@media (max-width: 700px) {
-  .formacao table {
-    font-size: 0.95rem;
-  }
-  .formacao th, .formacao td {
-    padding: 0.7rem 0.3rem;
   }
 }
