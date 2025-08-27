@@ -14,114 +14,97 @@
     <title>Meu Perfil</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <ul class="navbar_links">
-                <li class="active_page"> Home </li>
-                <li><a href="projetos.html"> Projetos </a></li>
-                <li><a href="contato.html"> Contato </a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="content">
-        <aside id="sidebar">
-            <img class="foto" src="./assets/img/larissaruiz.png" alt="Foto da Desenvolvedora" />
-            <h2 class="sidebar-name">Larissa Ruiz</h2>
-            <p class="skills">
-                Habilidades Técnicas:
-            </p>
+        <header class="header">
+            <div class="header-content" style="display:flex;justify-content:space-between;align-items:center;padding:1.2rem 2rem 1.2rem 2rem;background:#111;">
+                <div class="header-left" style="color:#FFD600;font-size:1.3rem;font-weight:700;">Larissa Ruiz – Desenvolvedora Full Stack</div>
+                <nav class="header-nav">
+                    <a href="index.html" style="color:#FFD600;font-size:1.1rem;font-weight:600;margin-left:2rem;text-decoration:none;">Home</a>
+                    <a href="projetos.html" style="color:#FFD600;font-size:1.1rem;font-weight:600;margin-left:2rem;text-decoration:none;">Projetos</a>
+                    <a href="contato.html" style="color:#FFD600;font-size:1.1rem;font-weight:600;margin-left:2rem;text-decoration:none;">Contato</a>
+                </nav>
+            </div>
+        </header>
+<main style="background:#FF9800;min-height:100vh;padding:0;">
+    <div style="display:flex;flex-direction:column;align-items:center;max-width:100vw;">
+        <div class="content-block">
+            <img class="profile-photo" src="assets/img/eu.jpg" alt="Foto da Desenvolvedora" style="object-fit:contain;" />
+            <h2>Larissa Ruiz</h2>
+            <p class="skills-title">Habilidades Técnicas</p>
             <ul class="skills-list">
-                <li><strong>Desenvolvimento Web:</strong> HTML, CSS, JavaScript, TypeScript, ReactJS</li>
-                <li><strong>Back-End e Integração:</strong> Node.js, NestJS, JestJS, Integração front-end/back-end e APIs REST</li>
-                <li><strong>Banco de Dados Relacionais:</strong> SQL, MySQL, PostgreSQL</li>
-                <li><strong>Banco de Dados Não Relacionais:</strong> (NoSQL) MongoDB</li>
-                <li><strong>Linguagens Adicionais:</strong> Python (nível iniciante)</li>
-                <li><strong>Metodologias:</strong> Metodologias Ágeis (Scrum e Kanban) e PMI / PMBOK</li>
-                <li><strong>Versionamento de Código:</strong> Git e GitHub</li>
-                <li><strong>Testes:</strong> Insomnia e Postman</li>
-                <li><strong>Outros:</strong> Conhecimentos iniciais em DevOps e Computação em Nuvem</li>
+                <li><span class="skill-label">Desenvolvimento Web:</span><span class="skill-content">HTML, CSS, JavaScript, TypeScript, ReactJS</span></li>
+                <li><span class="skill-label">Back-End e Integração:</span><span class="skill-content">Node.js, NestJS, JestJS, integração entre front-end e back-end, APIs REST</span></li>
+                <li><span class="skill-label">Bancos de Dados:</span><span class="skill-content">SQL, MySQL, PostgreSQL, MongoDB</span></li>
+                <li><span class="skill-label">Linguagens Adicionais:</span><span class="skill-content">Python (iniciante)</span></li>
+                <li><span class="skill-label">Metodologias Ágeis:</span><span class="skill-content">Scrum, Kanban, PMI / PMBOK</span></li>
+                <li><span class="skill-label">Versionamento:</span><span class="skill-content">Git e GitHub</span></li>
+                <li><span class="skill-label">Testes:</span><span class="skill-content">Insomnia, Postman</span></li>
+                <li><span class="skill-label">DevOps & Nuvem:</span><span class="skill-content">Conhecimentos iniciais em DevOps e computação em nuvem</span></li>
             </ul>
-        </aside>
-        <main id="main">
-            <section id="about">
-                <hgroup>
-                    <h2>Resumo Profissional</h2>
-                    <hr />
-                </hgroup>
-                <article class="about-text">
-                    <p>
-                        Desenvolvedora Full Stack Júnior com background em Moda e atualmente cursando Análise e Desenvolvimento de Sistemas. Tenho experiência prática em JavaScript, TypeScript, React, Node.js, NestJS, HTML, CSS, Git, SQL, APIs REST, além de bancos de dados relacionais (SQL, MySQL, PostgreSQL) e não relacionais (MongoDB), com foco em desenvolvimento web full stack e integração de sistemas.
-                    </p>
-                    <p>
-                        Ao longo de 12 anos no setor da moda, atuei em empresas como C&A, Riachuelo, Grupo Soma e Shein, liderando equipes e projetos em modelagem digital, estilo e planejamento de produção. Essa trajetória fortaleceu competências como liderança, metodologias ágeis, resolução de problemas, pensamento analítico, trabalho colaborativo e visão estratégica, que hoje aplico ao desenvolvimento de software.
-                    </p>
-                    <p>
-                        Busco uma oportunidade como Desenvolvedora Full Stack Júnior, em ambientes colaborativos e dinâmicos, onde eu possa unir minha experiência multidisciplinar ao aprendizado contínuo em tecnologia para entregar soluções eficientes, escaláveis e inovadoras.
-                    </p>
-                </article>
-            </section>
-            <hr />
-            <section class="formacao">
-                <h2>Formações</h2>
-                <table>
-                    <colgroup>
-                        <col class="col1" />
-                        <col class="col2" />
-                    </colgroup>
-                    <tr>
-                        <th>Curso</th>
-                        <th>Instituição</th>
-                        <th>Período</th>
-                        <th>Foco</th>
-                    </tr>
-                    <tr>
-                        <td>Graduação – Análise e Desenvolvimento de Sistemas</td>
-                        <td>Universidade São Judas Tadeu – São Paulo</td>
-                        <td>Agosto 2023 – Junho 2026 (Previsão)</td>
-                        <td>Desenvolvimento, implantação e manutenção de sistemas computacionais, gestão de projetos, metodologias ágeis, desenvolvimento full stack.</td>
-                    </tr>
-                    <tr>
-                        <td>Bootcamp – Desenvolvedor Full Stack JavaScript</td>
-                        <td>Generation Brasil – São Paulo</td>
-                        <td>Junho 2025 – Setembro 2025</td>
-                        <td>JavaScript, ReactJS, Node.js, NestJS, TypeScript, MySQL e metodologias ágeis (SCRUM).</td>
-                    </tr>
-                    <tr>
-                        <td>Curso Profissionalizante – Desenvolvedor Full Stack Python</td>
-                        <td>EBAC</td>
-                        <td>Dezembro 2024 – Dezembro 2025</td>
-                        <td>Python, Django, APIs, microsserviços, DevOps, Docker e Kubernetes.</td>
-                    </tr>
-                    <tr>
-                        <td>Graduação – Gestão e Produção do Vestuário</td>
-                        <td>SENAI Francisco Matarazzo – São Paulo</td>
-                        <td>Junho 2015 – Junho 2018</td>
-                        <td>Gestão da produção industrial, modelagem 3D, engenharia aplicada à moda.</td>
-                    </tr>
-                </table>
-            </section>
-            <hr />
-            <section id="video">
-                <h2>Sugestão de vídeo:</h2>
-                <figure class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/imDL2b-xMi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </figure>
-            </section>
-        </main>
+        </div>
+        <div class="content-block">
+            <h2>Resumo Profissional</h2>
+            <article class="about-text" style="font-size:1.1rem;color:#111;">
+                Desenvolvedora Full Stack Júnior com background em Moda e atualmente cursando Análise e Desenvolvimento de Sistemas. Tenho experiência prática em JavaScript, TypeScript, React, Node.js, NestJS, HTML, CSS, Git, SQL, APIs REST, além de bancos de dados relacionais (SQL, MySQL, PostgreSQL) e não relacionais (MongoDB), com foco em desenvolvimento web full stack e integração de sistemas.<br><br>
+                Ao longo de 12 anos no setor da moda, atuei em empresas como C&A, Riachuelo, Grupo Soma e Shein, liderando equipes e projetos em modelagem digital, estilo e planejamento de produção. Essa trajetória fortaleceu competências como liderança, metodologias ágeis, resolução de problemas, pensamento analítico, trabalho colaborativo e visão estratégica, que hoje aplico ao desenvolvimento de software.<br><br>
+                Busco uma oportunidade como Desenvolvedora Full Stack Júnior, em ambientes colaborativos e dinâmicos, onde eu possa unir minha experiência multidisciplinar ao aprendizado contínuo em tecnologia para entregar soluções eficientes, escaláveis e inovadoras.
+            </article>
+        </div>
+        <div class="content-block">
+            <h2>Formação</h2>
+            <table style="width:100%;border-collapse:collapse;font-size:1rem;">
+                <tr style="background:#FFD600;color:#111;font-weight:700;">
+                    <th style="padding:0.5rem;">Curso</th>
+                    <th style="padding:0.5rem;">Instituição</th>
+                    <th style="padding:0.5rem;">Período</th>
+                    <th style="padding:0.5rem;">Foco</th>
+                </tr>
+                <tr>
+                    <td style="padding:0.5rem;">Graduação – Análise e Desenvolvimento de Sistemas</td>
+                    <td style="padding:0.5rem;">Universidade São Judas Tadeu – São Paulo</td>
+                    <td style="padding:0.5rem;">Agosto 2023 – Junho 2026 (Previsão)</td>
+                    <td style="padding:0.5rem;">Desenvolvimento, implantação e manutenção de sistemas computacionais, gestão de projetos, metodologias ágeis, desenvolvimento full stack.</td>
+                </tr>
+                <tr>
+                    <td style="padding:0.5rem;">Bootcamp – Desenvolvedor Full Stack JavaScript</td>
+                    <td style="padding:0.5rem;">Generation Brasil – São Paulo</td>
+                    <td style="padding:0.5rem;">Junho 2025 – Setembro 2025</td>
+                    <td style="padding:0.5rem;">JavaScript, ReactJS, Node.js, NestJS, TypeScript, MySQL e metodologias ágeis (SCRUM).</td>
+                </tr>
+                <tr>
+                    <td style="padding:0.5rem;">Curso Profissionalizante – Desenvolvedor Full Stack Python</td>
+                    <td style="padding:0.5rem;">EBAC</td>
+                    <td style="padding:0.5rem;">Dezembro 2024 – Dezembro 2025</td>
+                    <td style="padding:0.5rem;">Python, Django, APIs, microsserviços, DevOps, Docker e Kubernetes.</td>
+                </tr>
+                <tr>
+                    <td style="padding:0.5rem;">Graduação – Gestão e Produção do Vestuário</td>
+                    <td style="padding:0.5rem;">SENAI Francisco Matarazzo – São Paulo</td>
+                    <td style="padding:0.5rem;">Junho 2015 – Junho 2018</td>
+                    <td style="padding:0.5rem;">Gestão da produção industrial, modelagem 3D, engenharia aplicada à moda.</td>
+                </tr>
+            </table>
+        </div>
+        <div class="content-block">
+            <h2>Sugestão de vídeo:</h2>
+            <figure class="video" style="display:flex;justify-content:center;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/imDL2b-xMi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </figure>
+        </div>
     </div>
-    <footer id="footer">
-        <section>
-            <a href="#" target="_blank">
-                <img src="assets/img/linkedin.svg" alt="LinkedIn" />
-            </a>
-            <a href="#" target="_blank">
-                <img src="assets/img/github.svg" alt="Github" />
-            </a>
-            <a href="#" target="_blank">
-                <img src="assets/img/email.svg" alt="E-mail" />
-            </a>
-        </section>
-        <h3>Feito por Larissa Ruiz - 2025</h3>
-    </footer>
+</main>
+<footer class="footer" style="background:#111;padding:1.2rem 0 1rem 0;">
+    <div class="footer-content" style="max-width:500px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:0.5rem;">
+        <div class="footer-icons" style="display:flex;gap:1.2rem;justify-content:center;align-items:center;font-size:2rem;">
+            <a href="https://www.linkedin.com/in/larissa-r-ruiz/" target="_blank" title="LinkedIn"><svg width="28" height="28" fill="#FFD600" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/></a>
+            <a href="https://github.com/Lalisruiz" target="_blank" title="GitHub"><svg width="28" height="28" fill="#FFD600" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576 4.765-1.588 8.2-6.084 8.2-11.386 0-6.627-5.373-12-12-12z"/></a>
+            <a href="https://wa.me/5511983202432" target="_blank" title="WhatsApp"><svg width="28" height="28" fill="#FFD600" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.151-.175.2-.298.3-.497.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.571-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.363.709.306 1.262.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.413-.074-.123-.272-.198-.57-.347m-5.421 7.617h-.001a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982 1-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.991c-.003 5.45-4.437 9.884-9.887 9.884m8.413-18.297A11.815 11.815 0 0012.05.001C5.495.001.06 5.436.057 11.989c0 2.113.552 4.174 1.6 5.981L.057 24l6.164-1.645a11.93 11.93 0 005.827 1.488h.005c6.554 0 11.889-5.435 11.892-11.988a11.86 11.86 0 00-3.486-8.484"/></svg></a>
+            <a href="mailto:rrs.larissa@gmail.com" title="Email"><svg width="28" height="28" fill="#FFD600" viewBox="0 0 24 24"><path d="M12 13.065l-11.714-7.81c.138-.13.324-.255.536-.255h21.357c.212 0 .398.125.536.255zm11.714-6.13l-7.964 7.964c-.534.534-1.248.801-1.964.801s-1.43-.267-1.964-.801l-7.964-7.964c-.13.138-.255.324-.255.536v13.357c0 .425.345.77.77.77h19.459c.425 0 .77-.345.77-.77v-13.357c0-.212-.125-.398-.255-.536zm-1.429 14.065h-19.459c-1.019 0-1.857-.838-1.857-1.857v-13.357c0-.527.206-1.022.58-1.396.373-.373.868-.58 1.396-.58h19.459c.527 0 1.022.207 1.396.58.373.374.58.869.58 1.396v13.357c0 1.019-.838 1.857-1.857 1.857z"/></svg></a>
+        </div>
+        <div class="footer-text" style="font-size:1rem;color:#FFD600;text-align:center;">
+            Feito por Larissa Ruiz - 2025
+        </div>
+    </div>
+</footer>
+  </footer>
 </body>
-</html>
+</html> 

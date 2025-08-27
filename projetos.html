@@ -1,55 +1,97 @@
-<div class="lista_projetos">
-  <div class="projeto-card">
-    <h3>Farmácia API</h3>
-    <p>Sistema de comércio eletrônico para farmácia, desenvolvido com NestJS, TypeORM e MySQL, focado em boas práticas, organização e requisitos do setor farmacêutico. Gerencia medicamentos, estoque, vendas e atendimento ao cliente, com conformidade regulatória.</p>
-    <ul>
-      <li><span class="destaque">NestJS, TypeScript, TypeORM, MySQL</span></li>
-      <li><span class="destaque">API RESTful: CRUD de Categorias e Produtos</span></li>
-      <li><span class="destaque">Associação de produtos a categorias</span></li>
-      <li><span class="destaque">Busca de produtos por nome e preço</span></li>
-      <li><span class="destaque">Atualização individual de preço e quantidade</span></li>
-      <li><span class="destaque">Validação, documentação e versionamento com GitHub</span></li>
-    </ul>
-    <a href="https://github.com/Lalisruiz/projeto_final_bloco_02" target="_blank" class="link-github">Ver no GitHub</a>
-  </div>
-  <div class="projeto-card">
-    <h3>Portfólio Profissional</h3>
-    <p>Site pessoal moderno, responsivo e com animações, focado em experiência do usuário e apresentação de habilidades.</p>
-    <ul>
-      <li><span class="destaque">HTML, CSS, JavaScript</span></li>
-      <li><span class="destaque">Design responsivo e UI/UX</span></li>
-      <li><span class="destaque">Formulário de contato funcional</span></li>
-    </ul>
-  <a href="https://github.com/Lalisruiz/portfolio_gen" target="_blank" class="link-github">Ver no GitHub</a>
-  </div>
-  <div class="projeto-card">
-    <h3>Blog Pessoal</h3>
-    <p>Blog full stack com TypeScript e NestJS, deploy no Render, documentação Swagger e testes automatizados.</p>
-    <ul>
-      <li><span class="destaque">NestJS, TypeScript, MySQL</span></li>
-      <li><span class="destaque">Testes: Jest, Insomnia</span></li>
-      <li><span class="destaque">Deploy: Render</span></li>
-      <li><span class="destaque">Swagger, autenticação JWT</span></li>
-      <li><span class="destaque">Arquitetura modular por domínio</span></li>
-    </ul>
-    <a href="https://github.com/SEU_USUARIO/blog-pessoal" target="_blank" class="link-github">Ver no GitHub</a>
-  </div>
-  <!-- Adicione mais projetos seguindo o mesmo padrão -->
-  <div class="projeto-card">
-    <h3>E-commerce de Moda Fitness</h3>
-    <p>Desenvolvimento de uma aplicação de e-commerce para Moda Fitness, executada via terminal, com tratamento de dados, que simula a gestão de produtos utilizando fundamentos de Programação Orientada a Objetos (POO) e boas práticas em TypeScript. Projeto realizado no curso da Generation Brasil.</p>
-    <ul>
-      <li><span class="destaque">TypeScript, Node.js, VS Code, Git, GitHub, MySQL</span></li>
-      <li><span class="destaque">Cadastro, consulta, atualização e remoção de produtos</span></li>
-      <li><span class="destaque">Persistência em banco de dados relacional</span></li>
-      <li><span class="destaque">Modelagem de classes com encapsulamento, herança e polimorfismo</span></li>
-      <li><span class="destaque">Modularização do código e tipagem estática com TypeScript</span></li>
-      <li><span class="destaque">Versionamento com Git e GitHub usando branches</span></li>
-    </ul>
-    <a href="https://github.com/Lalisruiz/projeto_final_bloco_01" target="_blank" class="link-github">Ver no GitHub</a>
-  </div>
-        </section>
-        <h3>Feito por Larissa Ruiz - 2025</h3>
-    </footer>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projetos - Portfólio Profissional" />
+    <meta name="author" content="Larissa Ruiz" />
+    <meta name="keywords" content="Projetos, Full Stack, Portfolio" />
+    <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Projetos</title>
+</head>
+<body>
+        <header class="header">
+    <div class="header-content" style="display:flex;justify-content:space-between;align-items:center;padding:1.2rem 2rem 1.2rem 2rem;background:#111;">
+        <div class="header-left" style="color:#FFD600;font-size:1.3rem;font-weight:700;">Larissa Ruiz – Desenvolvedora Full Stack</div>
+        <nav class="header-nav">
+            <a href="index.html" style="color:#FFD600;font-size:1.1rem;font-weight:600;margin-left:2rem;text-decoration:none;">Home</a>
+            <a href="projetos.html" style="color:#FFD600;font-size:1.1rem;font-weight:600;margin-left:2rem;text-decoration:none;">Projetos</a>
+            <a href="contato.html" style="color:#FFD600;font-size:1.1rem;font-weight:600;margin-left:2rem;text-decoration:none;">Contato</a>
+        </nav>
+    </div>
+</header>
+<main style="background:#FF9800;min-height:100vh;padding:0;">
+    <section id="projetos" style="background:#fffbe6;border-radius:24px;box-shadow:0 2px 12px rgba(255,223,0,0.13);margin:2.5rem auto;padding:2.5rem 2rem;max-width:1000px;width:95vw;">
+        <h2 style="color:#FF9800;font-size:2rem;font-weight:700;text-align:center;margin-bottom:2rem;">Projetos</h2>
+        <div class="lista_projetos" style="display:flex;flex-wrap:wrap;gap:2rem;justify-content:center;">
+            <div class="projeto-card" style="background:#fff;border-radius:16px;box-shadow:0 2px 8px rgba(255,223,0,0.10);padding:2rem;max-width:380px;flex:1 1 320px;display:flex;flex-direction:column;align-items:start;">
+                <h3 style="color:#FF9800;font-size:1.3rem;font-weight:700;margin-bottom:0.7rem;">Farmácia API</h3>
+                <p style="color:#111;font-size:1rem;">Sistema de comércio eletrônico para farmácia, desenvolvido com NestJS, TypeORM e MySQL, focado em boas práticas, organização e requisitos do setor farmacêutico. Gerencia medicamentos, estoque, vendas e atendimento ao cliente, com conformidade regulatória.</p>
+                <ul style="margin:0 0 1rem 0;padding:0 0 0 1rem;">
+                    <li><span class="destaque">NestJS, TypeScript, TypeORM, MySQL</span></li>
+                    <li><span class="destaque">API RESTful: CRUD de Categorias e Produtos</span></li>
+                    <li><span class="destaque">Associação de produtos a categorias</span></li>
+                    <li><span class="destaque">Busca de produtos por nome e preço</span></li>
+                    <li><span class="destaque">Atualização individual de preço e quantidade</span></li>
+                    <li><span class="destaque">Validação, documentação e versionamento com GitHub</span></li>
+                </ul>
+                <a href="https://github.com/Lalisruiz/projeto_final_bloco_02" target="_blank" class="link-github" style="color:#FF9800;font-weight:600;">Ver no GitHub</a>
+            </div>
+            <div class="projeto-card" style="background:#fff;border-radius:16px;box-shadow:0 2px 8px rgba(255,223,0,0.10);padding:2rem;max-width:380px;flex:1 1 320px;display:flex;flex-direction:column;align-items:start;">
+                <h3 style="color:#FF9800;font-size:1.3rem;font-weight:700;margin-bottom:0.7rem;">Portfólio Profissional</h3>
+                <p style="color:#111;font-size:1rem;">Site pessoal moderno, responsivo e com animações, focado em experiência do usuário e apresentação de habilidades.</p>
+                <ul style="margin:0 0 1rem 0;padding:0 0 0 1rem;">
+                    <li><span class="destaque">HTML, CSS, JavaScript</span></li>
+                    <li><span class="destaque">Design responsivo e UI/UX</span></li>
+                    <li><span class="destaque">Formulário de contato funcional</span></li>
+                </ul>
+                <a href="https://github.com/Lalisruiz/portfolio_gen" target="_blank" class="link-github" style="color:#FF9800;font-weight:600;">Ver no GitHub</a>
+            </div>
+            <div class="projeto-card" style="background:#fff;border-radius:16px;box-shadow:0 2px 8px rgba(255,223,0,0.10);padding:2rem;max-width:380px;flex:1 1 320px;display:flex;flex-direction:column;align-items:start;">
+                <h3 style="color:#FF9800;font-size:1.3rem;font-weight:700;margin-bottom:0.7rem;">Blog Pessoal</h3>
+                <p style="color:#111;font-size:1rem;">Blog full stack com TypeScript e NestJS, deploy no Render, documentação Swagger e testes automatizados.</p>
+                <ul style="margin:0 0 1rem 0;padding:0 0 0 1rem;">
+                    <li><span class="destaque">NestJS, TypeScript, MySQL</span></li>
+                    <li><span class="destaque">Testes: Jest, Insomnia</span></li>
+                    <li><span class="destaque">Deploy: Render</span></li>
+                    <li><span class="destaque">Swagger, autenticação JWT</span></li>
+                    <li><span class="destaque">Arquitetura modular por domínio</span></li>
+                </ul>
+                <a href="https://github.com/SEU_USUARIO/blog-pessoal" target="_blank" class="link-github" style="color:#FF9800;font-weight:600;">Ver no GitHub</a>
+            </div>
+            <div class="projeto-card" style="background:#fff;border-radius:16px;box-shadow:0 2px 8px rgba(255,223,0,0.10);padding:2rem;max-width:380px;flex:1 1 320px;display:flex;flex-direction:column;align-items:start;">
+                <h3 style="color:#FF9800;font-size:1.3rem;font-weight:700;margin-bottom:0.7rem;">E-commerce de Moda Fitness</h3>
+                <p style="color:#111;font-size:1rem;">Desenvolvimento de uma aplicação de e-commerce para Moda Fitness, executada via terminal, com tratamento de dados, que simula a gestão de produtos utilizando fundamentos de Programação Orientada a Objetos (POO) e boas práticas em TypeScript. Projeto realizado no curso da Generation Brasil.</p>
+                <ul style="margin:0 0 1rem 0;padding:0 0 0 1rem;">
+                    <li><span class="destaque">TypeScript, Node.js, VS Code, Git, GitHub, MySQL</span></li>
+                    <li><span class="destaque">Cadastro, consulta, atualização e remoção de produtos</span></li>
+                    <li><span class="destaque">Persistência em banco de dados relacional</span></li>
+                    <li><span class="destaque">Modelagem de classes com encapsulamento, herança e polimorfismo</span></li>
+                    <li><span class="destaque">Modularização do código e tipagem estática com TypeScript</span></li>
+                    <li><span class="destaque">Versionamento com Git e GitHub usando branches</span></li>
+                </ul>
+                <a href="https://github.com/Lalisruiz/projeto_final_bloco_01" target="_blank" class="link-github" style="color:#FF9800;font-weight:600;">Ver no GitHub</a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer" style="background:#111;padding:1.2rem 0 1rem 0;">
+    <div class="footer-content" style="max-width:500px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:0.5rem;">
+        <div class="footer-icons" style="display:flex;gap:1.2rem;justify-content:center;align-items:center;font-size:2rem;">
+            <a href="https://www.linkedin.com/in/larissa-r-ruiz/" target="_blank" title="LinkedIn"><svg width="28" height="28" fill="#FFD600" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/></a>
+            <a href="https://github.com/Lalisruiz" target="_blank" title="GitHub"><svg width="28" height="28" fill="#FFD600" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576 4.765-1.588 8.2-6.084 8.2-11.386 0-6.627-5.373-12-12-12z"/></a>
+            <a href="https://wa.me/5511983202432" target="_blank" title="WhatsApp"><svg width="28" height="28" fill="#FFD600" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.151-.175.2-.298.3-.497.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.571-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.363.709.306 1.262.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.413-.074-.123-.272-.198-.57-.347m-5.421 7.617h-.001a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982 1-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.991c-.003 5.45-4.437 9.884-9.887 9.884m8.413-18.297A11.815 11.815 0 0012.05.001C5.495.001.06 5.436.057 11.989c0 2.113.552 4.174 1.6 5.981L.057 24l6.164-1.645a11.93 11.93 0 005.827 1.488h.005c6.554 0 11.889-5.435 11.892-11.988a11.86 11.86 0 00-3.486-8.484"/></svg></a>
+            <a href="mailto:rrs.larissa@gmail.com" title="Email"><svg width="28" height="28" fill="#FFD600" viewBox="0 0 24 24"><path d="M12 13.065l-11.714-7.81c.138-.13.324-.255.536-.255h21.357c.212 0 .398.125.536.255zm11.714-6.13l-7.964 7.964c-.534.534-1.248.801-1.964.801s-1.43-.267-1.964-.801l-7.964-7.964c-.13.138-.255.324-.255.536v13.357c0 .425.345.77.77.77h19.459c.425 0 .77-.345.77-.77v-13.357c0-.212-.125-.398-.255-.536zm-1.429 14.065h-19.459c-1.019 0-1.857-.838-1.857-1.857v-13.357c0-.527.206-1.022.58-1.396.373-.373.868-.58 1.396-.58h19.459c.527 0 1.022.207 1.396.58.373.374.58.869.58 1.396v13.357c0 1.019-.838 1.857-1.857 1.857z"/></svg></a>
+        </div>
+        <div class="footer-text" style="font-size:1rem;color:#FFD600;text-align:center;">
+            Feito por Larissa Ruiz - 2025
+        </div>
+    </div>
+</footer>
+  </footer>
 </body>
 </html>
