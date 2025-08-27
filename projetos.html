@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,22 +14,23 @@
     <title>Projetos</title>
 </head>
 <body>
-        <header class="header">
-    <div class="header-content" style="display:flex;justify-content:space-between;align-items:center;padding:1.2rem 2rem 1.2rem 2rem;background:#111;">
-        <div class="header-left" style="color:#FFD600;font-size:1.3rem;font-weight:700;">Larissa Ruiz – Desenvolvedora Full Stack</div>
-        <nav class="header-nav">
-            <a href="index.html" style="color:#FFD600;font-size:1.1rem;font-weight:600;margin-left:2rem;text-decoration:none;">Home</a>
-            <a href="projetos.html" style="color:#FFD600;font-size:1.1rem;font-weight:600;margin-left:2rem;text-decoration:none;">Projetos</a>
-            <a href="contato.html" style="color:#FFD600;font-size:1.1rem;font-weight:600;margin-left:2rem;text-decoration:none;">Contato</a>
-        </nav>
-    </div>
+<header>
+  <div class="container">
+    <h1 class="site-title">Larissa Ruiz | Desenvolvedora Full Stack</h1>
+    <button class="menu-btn">&#9776;</button>
+    <nav class="nav">
+      <a href="index.html">Sobre Mim</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
 </header>
 <main style="background:#FF9800;min-height:100vh;padding:0;">
     <section id="projetos" style="background:#fffbe6;border-radius:24px;box-shadow:0 2px 12px rgba(255,223,0,0.13);margin:2.5rem auto;padding:2.5rem 2rem;max-width:1000px;width:95vw;">
-        <h2 style="color:#FF9800;font-size:2rem;font-weight:700;text-align:center;margin-bottom:2rem;">Projetos</h2>
+    <h2 class="section-title" style="color:#FF9800;text-align:center;font-size:2rem;">Projetos</h2>
         <div class="lista_projetos" style="display:flex;flex-wrap:wrap;gap:2rem;justify-content:center;">
             <div class="projeto-card" style="background:#fff;border-radius:16px;box-shadow:0 2px 8px rgba(255,223,0,0.10);padding:2rem;max-width:380px;flex:1 1 320px;display:flex;flex-direction:column;align-items:start;">
-                <h3 style="color:#FF9800;font-size:1.3rem;font-weight:700;margin-bottom:0.7rem;">Farmácia API</h3>
+                <h3 class="subsection-title" style="color:#FF9800;text-align:center;">Farmácia API</h3>
                 <p style="color:#111;font-size:1rem;">Sistema de comércio eletrônico para farmácia, desenvolvido com NestJS, TypeORM e MySQL, focado em boas práticas, organização e requisitos do setor farmacêutico. Gerencia medicamentos, estoque, vendas e atendimento ao cliente, com conformidade regulatória.</p>
                 <ul style="margin:0 0 1rem 0;padding:0 0 0 1rem;">
                     <li><span class="destaque">NestJS, TypeScript, TypeORM, MySQL</span></li>
@@ -43,7 +43,7 @@
                 <a href="https://github.com/Lalisruiz/projeto_final_bloco_02" target="_blank" class="link-github" style="color:#FF9800;font-weight:600;">Ver no GitHub</a>
             </div>
             <div class="projeto-card" style="background:#fff;border-radius:16px;box-shadow:0 2px 8px rgba(255,223,0,0.10);padding:2rem;max-width:380px;flex:1 1 320px;display:flex;flex-direction:column;align-items:start;">
-                <h3 style="color:#FF9800;font-size:1.3rem;font-weight:700;margin-bottom:0.7rem;">Portfólio Profissional</h3>
+                <h3 class="subsection-title" style="color:#FF9800;text-align:center;">Portfólio Profissional</h3>
                 <p style="color:#111;font-size:1rem;">Site pessoal moderno, responsivo e com animações, focado em experiência do usuário e apresentação de habilidades.</p>
                 <ul style="margin:0 0 1rem 0;padding:0 0 0 1rem;">
                     <li><span class="destaque">HTML, CSS, JavaScript</span></li>
@@ -53,7 +53,7 @@
                 <a href="https://github.com/Lalisruiz/portfolio_gen" target="_blank" class="link-github" style="color:#FF9800;font-weight:600;">Ver no GitHub</a>
             </div>
             <div class="projeto-card" style="background:#fff;border-radius:16px;box-shadow:0 2px 8px rgba(255,223,0,0.10);padding:2rem;max-width:380px;flex:1 1 320px;display:flex;flex-direction:column;align-items:start;">
-                <h3 style="color:#FF9800;font-size:1.3rem;font-weight:700;margin-bottom:0.7rem;">Blog Pessoal</h3>
+                <h3 class="subsection-title" style="color:#FF9800;text-align:center;">Blog Pessoal</h3>
                 <p style="color:#111;font-size:1rem;">Blog full stack com TypeScript e NestJS, deploy no Render, documentação Swagger e testes automatizados.</p>
                 <ul style="margin:0 0 1rem 0;padding:0 0 0 1rem;">
                     <li><span class="destaque">NestJS, TypeScript, MySQL</span></li>
@@ -65,7 +65,7 @@
                 <a href="https://github.com/SEU_USUARIO/blog-pessoal" target="_blank" class="link-github" style="color:#FF9800;font-weight:600;">Ver no GitHub</a>
             </div>
             <div class="projeto-card" style="background:#fff;border-radius:16px;box-shadow:0 2px 8px rgba(255,223,0,0.10);padding:2rem;max-width:380px;flex:1 1 320px;display:flex;flex-direction:column;align-items:start;">
-                <h3 style="color:#FF9800;font-size:1.3rem;font-weight:700;margin-bottom:0.7rem;">E-commerce de Moda Fitness</h3>
+                <h3 class="subsection-title" style="color:#FF9800;text-align:center;">E-commerce de Moda Fitness</h3>
                 <p style="color:#111;font-size:1rem;">Desenvolvimento de uma aplicação de e-commerce para Moda Fitness, executada via terminal, com tratamento de dados, que simula a gestão de produtos utilizando fundamentos de Programação Orientada a Objetos (POO) e boas práticas em TypeScript. Projeto realizado no curso da Generation Brasil.</p>
                 <ul style="margin:0 0 1rem 0;padding:0 0 0 1rem;">
                     <li><span class="destaque">TypeScript, Node.js, VS Code, Git, GitHub, MySQL</span></li>

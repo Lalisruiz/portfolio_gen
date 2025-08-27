@@ -1,14 +1,52 @@
-# Arquivos de sistema
+# Node.js
+node_modules/
+
+# VS Code
+.vscode/
+
+# OS files
 .DS_Store
 Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# Configurações de IDE
-.vscode/
-.idea/
-*.swp
-*.swo
 
 # Logs
 *.log
+
+# Build
+/dist/
+/build/
+
+# Environment
+.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+
+# Windows
+*.exe
+*.dll
+*.pdb
+
+# Mac
+*.app
+
+# Others
+*.swp
+*.swo
+
+# Backup
+*.bak
+
+# Compiled
+*.out
+*.class
+
+# Portfolio specific
+assets/img/*.psd
+assets/img/*.ai
+assets/img/*.xcf
+assets/img/previa.png
+
+# Ignore system folders
+.idea/
