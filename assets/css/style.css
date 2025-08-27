@@ -1,0 +1,447 @@
+/* Imagem quadrada com bordas arredondadas e borda amarela */
+.img-quadrada {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 30px;
+  border: 6px solid #FFD600;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  background: #fff;
+  display: block;
+}
+
+
+:root {
+  --primary: #FF9800;
+  --primary-ex-dark: #111;
+  --secondary: #FFD600;
+  --white: #fff;
+  --auxiliary1-ex-dark: #fffbe6;
+  --auxiliary2-ex-dark: #fff3e0;
+  --tertiary: #FF9800;
+  --tertiary-light: #FFD600;
+  --tertiary-dark: #FF9800;
+  --radius-xl: 16px;
+  --radius-3xl: 32px;
+  --radius-md: 8px;
+  --circle: 50%;
+  --font-size-4xl: 2rem;
+  --font-size-5xl: 2.5rem;
+  --font-size-lg: 1.2rem;
+  --font-size-xl: 1.5rem;
+  --font-size-sm: 0.9rem;
+  --spacing-1: 0.5rem;
+  --spacing-2: 1rem;
+  --spacing-4: 2rem;
+  --spacing-6: 3rem;
+  --spacing-8: 4rem;
+  --spacing-12: 6rem;
+  --alert: #FF9800;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Paleta: Laranja forte (#FF9800), Preto (#111), Amarelo mostarda (#FFD600) */
+
+:root {
+  --primary: #FF9800;
+  --primary-ex-dark: #111;
+  --secondary: #FFD600;
+  --white: #fff;
+  --auxiliary1-ex-dark: #fffbe6;
+  --auxiliary2-ex-dark: #fff3e0;
+  --tertiary: #FF9800;
+  --tertiary-light: #FFD600;
+  --tertiary-dark: #FF9800;
+  --radius-xl: 16px;
+  --radius-3xl: 32px;
+  --radius-md: 8px;
+  --circle: 50%;
+  --font-size-4xl: 2rem;
+  --font-size-5xl: 2.5rem;
+  --font-size-lg: 1.2rem;
+  --font-size-xl: 1.5rem;
+  --font-size-sm: 0.9rem;
+  --spacing-1: 0.5rem;
+  --spacing-2: 1rem;
+  --spacing-4: 2rem;
+  --spacing-6: 3rem;
+  --spacing-8: 4rem;
+  --spacing-12: 6rem;
+  --alert: #FF9800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #FF9800;
+  color: #111;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+header {
+  width: 100%;
+  left: 0;
+  background: #111;
+  color: #FFD600;
+  padding: 1.5rem 0 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: #FFD600;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
+  margin-left: 0;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #FFD600;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  gap: 2.5rem;
+  margin-left: auto;
+  justify-content: flex-end;
+  min-width: 0;
+}
+
+.nav a {
+  color: #FFD600;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s, background 0.3s;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+}
+
+.nav a:hover {
+  color: #FF9800;
+  background: #FFD600;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 3rem;
+  background: #fffbe6;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(255,223,0,0.10);
+  color: #111;
+}
+
+section h2 {
+  margin-bottom: 1.2rem;
+  font-size: 2rem;
+  color: #FF9800;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h1 {
+  background: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Projetos Cards */
+.lista_projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.projeto-card {
+  background: #fffbe6;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(255,223,0,0.10);
+  border-left: 6px solid #FFD600;
+  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+  min-width: 270px;
+  max-width: 350px;
+  flex: 1 1 300px;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  transition: box-shadow 0.2s;
+}
+.projeto-card h3 {
+  font-size: 1.3rem;
+  color: #111;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.projeto-card ul {
+  margin: 0.5rem 0 0.5rem 1.2rem;
+  padding: 0;
+  list-style: disc;
+}
+.projeto-card li {
+  color: #FF9800;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+.projeto-card .destaque {
+  color: #FF9800;
+  font-weight: 600;
+}
+.projeto-card a.link-github {
+  color: #FF9800;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-top: 0.5rem;
+  transition: color 0.2s;
+}
+.projeto-card a.link-github:hover {
+  color: #FFD600;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+input, textarea {
+  padding: 0.8rem;
+  border: 1px solid #FFD600;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #fffbe6;
+  color: #111;
+}
+input:focus, textarea:focus {
+  outline: 2px solid #FFD600;
+}
+button[type="submit"] {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  box-shadow: 0 1px 4px rgba(255,111,0,0.10);
+}
+button[type="submit"]:hover {
+  background: #FFD600;
+  color: #111;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #111;
+  color: #FFD600;
+  margin-top: 2rem;
+}
+
+/* Blocos de conteúdo padronizados */
+.content-block {
+  background: var(--white);
+  border-radius: 32px;
+  box-shadow: 0 4px 24px rgba(255,152,0,0.13);
+  margin: 2.5rem auto;
+  padding: 2.5rem 2rem;
+  max-width: 800px;
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Foto de perfil quadrada, borda arredondada (círculo), sem cortes estranhos */
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  margin-bottom: 1.2rem;
+  padding: 0;
+  overflow: hidden;
+  display: block;
+}
+
+/* Títulos destacados */
+.content-block h2 {
+  color: var(--primary);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+/* Espaçamento entre blocos */
+.content-block + .content-block {
+  margin-top: 2.5rem;
+}
+
+/* Skills Section */
+.skills-title {
+  font-weight: bold;
+  font-size: 1.35rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #FF9800;
+  letter-spacing: 0.5px;
+}
+.skills-list {
+  list-style: none;
+  padding: 0 2rem;
+  margin: 0 auto;
+  max-width: 900px;
+  font-size: 1.08rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 1.5rem;
+  row-gap: 1.2rem;
+}
+.skills-list li {
+  margin-bottom: 0;
+  line-height: 1.5;
+  word-break: normal;
+  display: contents;
+}
+.skill-label {
+  font-weight: bold;
+  color: #FF9800;
+  margin-right: 0.5rem;
+  display: block;
+  min-width: 170px;
+  white-space: nowrap;
+  text-align: right;
+}
+.skill-content {
+  display: block;
+  text-align: left;
+  white-space: normal;
+}
+@media (max-width: 700px) {
+  .skills-list {
+    grid-template-columns: 1fr;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+  }
+  .skill-label {
+    min-width: 0;
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 0.2rem;
+  }
+  .skill-content {
+    margin-bottom: 1rem;
+  }
+  .content-block {
+    padding: 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+  }
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav {
+    flex-direction: column;
+    gap: 1rem;
+    display: none;
+    width: 100%;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 1rem 0;
+  }
+  .nav.active {
+    display: flex;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .lista_projetos {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .projeto-card {
+    min-width: 90vw;
+    max-width: 98vw;
+    padding: 1rem;
+  }
+}
+
+/* Estilo da tabela de formação */
+.formacao table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.08rem;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(255,152,0,0.10);
+}
+.formacao th {
+  background: #FFD600;
+  color: #111;
+  font-weight: 700;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  font-size: 1.15rem;
+  border: 1.5px solid #FFD600;
+}
+.formacao td {
+  padding: 1rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+  border: 1.5px solid #FFD600;
+}
+.formacao tr:last-child td {
+  border-bottom: 1.5px solid #FFD600;
+}
+.formacao tr {
+  transition: background 0.2s;
+}
+.formacao tr:hover td {
+  background: #fffbe6;
+}
+@media (max-width: 700px) {
+  .formacao table {
+    font-size: 0.95rem;
+  }
+  .formacao th, .formacao td {
+    padding: 0.7rem 0.3rem;
+  }
+}
