@@ -1,17 +1,222 @@
-# Arquivos de sistema
-.DS_Store
-Thumbs.db
-ehthumbs.db
-Desktop.ini
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Projeto Portfólio" />
+		<meta name="author" content="Lucas Alves Pinheiro" />
+		<meta name="keywords" content="HTML, CSS, JavaScript" />
 
-# Configurações de IDE
-.vscode/
-.idea/
-*.swp
-*.swo
+		<link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
 
-# Logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet" />
+
+		<link rel="stylesheet" href="./assets/css/style.css" />
+
+		<title>Meu Perfil</title>
+	</head>
+	<body>
+		<!-- Cabeçalho da Página (header) -->
+		<header class="header">
+			<!-- Menu de Navegação -->
+			<nav class="navbar">
+				<ul class="navbar_links">
+					<li class="active_page"> Home </li>
+					<li><a href="projetos.html"> Projetos </a></li>
+					<li><a href="contato.html"> Contato </a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Div para agrupamento da sidebar e do conteúdo -->
+		<div class="content">
+			<!-- Sidebar -->
+			<aside id="sidebar">
+				<img class="foto" src="./assets/img/user_lucas.png" alt="Foto do Lucas Alves Pinheiro, criador desse conteúdo" />
+				<h2 class="sidebar-name">Lucas Alves Pinheiro</h2>
+				<p class="skills">
+					Habilidades:
+					<br />
+				</p>
+
+				<!-- Lista de Habilidades -->
+				<ul class="skills-list">
+					<li>
+						<span><abbr title="HyperText Markup Language">HTML</abbr></span>
+					</li>
+					<li>
+						<span><abbr title="Cascade Style Sheet">CSS</abbr></span>
+					</li>
+					<li><span>JavaScript</span></li>
+					<li><span>ECMAScript</span></li>
+					<li><span>React</span></li>
+					<li><span>jQuery</span></li>
+					<li><span>Bootstrap</span></li>
+					<li><span>Material UI</span></li>
+					<li><span>Node.js</span></li>
+					<li><span>NestJs</span></li>
+					<li><span>PHP</span></li>
+					<li><span>Python</span></li>
+					<li><span>MySQL</span></li>
+					<li><span>MongoDB</span></li>
+					<li><span>Modelagem de Dados</span></li>
+					<li><span>Lógica de Programação</span></li>
+					<li><span>Programação Orientada a Objeto</span></li>
+					<li>
+						<span><abbr title="Software as a Service">SaaS</abbr></span>
+					</li>
+					<li><span>Figma</span></li>
+					<li><span>Prototipagem</span></li>
+					<li><span>Wireframes</span></li>
+					<li><span>Git</span></li>
+					<li><span>GitHub</span></li>
+					<li><span>Versionamento de Código</span></li>
+					<li><span>Scrum</span></li>
+					<li><span>Kanban</span></li>
+					<li><span>Metodologias Ágeis</span></li>
+					<li>
+						<span><abbr title="Search Engine Optimization">SEO</abbr></span>
+					</li>
+				</ul>
+			</aside>
+
+			<!-- Seção Principal da Página (main) -->
+			<main id="main">
+				<!-- Seção Sobre -->
+				<section id="about">
+					<hgroup>
+						<h2>Sobre mim</h2>
+						<hr />
+						<h3><small>De Engenheiro Civil a Desenvolvedor Full Stack.</small></h3>
+					</hgroup>
+					<article class="about-text">
+						<blockquote>
+							<p>“A diferença entre cair e fracassar é se você decide levantar ou não.”</p>
+							<footer>— <cite>SHINMON, Benimaru - Fire Force</cite>.</footer>
+						</blockquote>
+						<p>
+							Minha jornada profissional começou na Engenharia Civil, onde aprendi a ser analítico e a coordenar processos. Mas foi no universo da
+							tecnologia que encontrei minha verdadeira paixão. Hoje, atuo como Desenvolvedor <mark>Full Stack Júnior</mark>, com proficiência em
+							HTML, CSS e JavaScript, e busco aplicar minha expertise para construir interfaces web interativas e acessíveis.
+						</p>
+						<p>
+							Atualmente, estou me aprofundando em React, e me apaixonei por transformar designs complexos em código limpo. Meu foco é na experiência
+							do usuário e na escalabilidade do produto, sempre em busca de soluções que façam sentido para quem usa.
+						</p>
+						<p>
+							Faço parte do Bootcamp da Generation Brasil de Desenvolvedor JavaScript Fullstack, e sou formado em Jogos Digitais. Me especializo em
+							UX/UI pela <abbr title="Escola Britânica de Artes Criativas">EBAC</abbr>, utilizando metodologias como Design Thinking e Double Diamond,
+							além de ferramentas como Figma e Git.
+						</p>
+						<br />
+
+						<!-- Lista de paixões e inspirações -->
+						<details>
+							<summary>
+								<h3><small>Gostos e Hobbies</small></h3>
+							</summary>
+							<dl>
+								<dt>Animes favoritos:</dt>
+								<dd>
+									One Piece, Steins;Gate, Fullmetal Alchemist, Monogatari Series, Demon Slayer, HunterXHunter, Evangelion, Fire Force, entre outros.
+								</dd>
+								<dt>Jogos favoritos:</dt>
+								<dd>Pokémon, Subnautica, Hollow Knight, Celeste, NieR: Automata e Darksiders.</dd>
+								<dt>Filmes favoritos:</dt>
+								<dd>Tudo em To Lugar ao Mesmo Tempo, Pecadores, A Bruxa, Mr. Nobody, O Menu, entre outros.</dd>
+								<dt>Livros favoritos:</dt>
+								<dd>
+									O Guia do Mochileiro das Galaxias, Alice no Pais das Maravilhas, Viver Apaixonadamente com Kierkegaard, Ser Livre com Sartre e A
+									Divína Comédia.
+								</dd>
+							</dl>
+						</details>
+					</article>
+				</section>
+
+				<hr />
+
+				<!-- Seção de Formação com uso de tabela -->
+				<section class="formacao">
+					<!-- Título da Seção -->
+					<h2>Formações</h2>
+					<table>
+						<colgroup>
+							<col class="col1" />
+							<col class="col2" />
+						</colgroup>
+						<tr>
+							<th>Curso</th>
+							<th>Instituição</th>
+							<th>Conclusão</th>
+						</tr>
+						<tr>
+							<data value="3">
+								<td>Desenvolvedor Fullstack JavaScript</td>
+								<td>Generation Brasil</td>
+								<td>09/2025</td>
+							</data>
+						</tr>
+						<tr>
+							<data value="2">
+								<td>Jogos Digitais</td>
+								<td>Estácio</td>
+								<td>06/2025</td>
+							</data>
+						</tr>
+						<tr>
+							<data value="1">
+								<td>Engenharia Civil</td>
+								<td>FMU</td>
+								<td>11/2020</td>
+							</data>
+						</tr>
+					</table>
+				</section>
+
+				<hr />
+
+				<!-- Seção Vídeo -->
+				<section id="video">
+					<!-- Título da Seção -->
+					<h2>Meu vídeo favorito:</h2>
+
+					<!-- Vídeo da Seção -->
+					<figure class="video">
+						<iframe
+							width="560"
+							height="315"
+							src="https://www.youtube.com/embed/Vs29RuuDtY4?si=4NW-38tKqBbvkqI4"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin"
+							allowfullscreen></iframe>
+					</figure>
+					<p class="legenda"><cite> O Chamado </cite> - Fabio Brazza</p>
+				</section>
+			</main>
+		</div>
+
+		<!-- Rodapé da Página (footer) -->
+		<footer id="footer">
+			<section>
+				<a href="https://www.linkedin.com/in/lucasalvespinheiro/" target="_blank">
+					<img src="assets/img/linkedin.svg" alt="LinkedIn" />
+				</a>
+				<a href="https://github.com/RaideriSpace" target="_blank">
+					<img src="assets/img/github.svg" alt="Github" />
+				</a>
+				<a href="https://wa.me/5511989157255" target="_blank">
+					<img src="assets/img/whatsapp.svg" alt="Whatsapp" />
+				</a>
+			</section>
+
+			<h3>Feito com ❤️ por Lucas Alves Pinheiro - 2025</h3>
+		</footer>
+	</body>
+</html>
